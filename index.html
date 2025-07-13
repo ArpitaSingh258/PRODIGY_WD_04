@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arpita Singh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f4f7f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #dd66ea, #d78acb);
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd369;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: #d78acb;
+      text-align: center;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #d78acb;
+    }
+
+    .projects, .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #d78acb;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Arpita Singh</h1>
+    <p>Web Developer | Creative Thinker | Problem Solver</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <img src="ME.jpg" alt="Arpita Singh">
+    <p>
+      Hello! I'm Arpita Singh , a passionate Web Developer currently interning at Prodigy InfoTech. <br>
+      I enjoy creating responsive and engaging websites using modern front-end technologies. <br>
+      My strengths lie in clean UI design, user experience, and building real-world projects.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>Displays real-time weather using OpenWeatherMap API with a clean UI.</p>
+      </div>
+      <div class="card">
+        <h3>Stopwatch</h3>
+        <p>JavaScript-based stopwatch for time tracking with start, stop and reset features.</p>
+      </div>
+      <div class="card">
+        <h3>Tic Tac Toe</h3>
+        <p>Classic two-player game with interactive UI and simple logic.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h4>Frontend</h4>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+      <div class="card">
+        <h4>Tools</h4>
+        <p>Git, VS Code, GitHub, Figma</p>
+      </div>
+      <div class="card">
+        <h4>Soft Skills</h4>
+        <p>Problem Solving, Communication, Leardership</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p style="text-align:center">Email: <a href="mailto:arpitasingh945411@gmail.com">arpitasingh9454@gmail.com</a></p>
+    <p style="text-align:center">LinkedIn: <a href="#">https://www.linkedin.com/in/arpita-singh-9b8088285</a></p>
+    <p style="text-align:center">GitHub: <a href="https://github.com/ArpitaSingh258" target="_blank">https://github.com/ArpitaSingh258</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arpita Singh | All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>
